@@ -5,7 +5,7 @@
 }
 
 .header {
-    background-color: #f2f2f2;
+    background-color: #6c1d5f;
 }
 
 .headerContainer {
@@ -29,7 +29,7 @@
     line-height: 28px;
     display: flex;
     align-items: flex-end;
-    color: #242424;
+    color: #c786cc;
 }
 
 .headerIcon {
@@ -47,7 +47,7 @@
     gap: 4px;
     width: 86px;
     height: 32px;
-    background: radial-gradient(109.81% 107.82% at 100.1% 90.19%, #0F6CBD 33.63%, #2D87C3 70.31%, #8DDDD8 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    background: radial-gradient(109.81% 107.82% at 100.1% 90.19%,#944c88 33.63%,#a43592 70.31%,#dd86d9c2 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
     border-radius: 4px;
     flex: none;
     order: 1;

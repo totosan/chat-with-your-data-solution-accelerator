@@ -17,7 +17,7 @@ import rehypeRaw from "rehype-raw";
 import { v4 as uuidv4 } from "uuid";
 
 import styles from "./Chat.module.css";
-import Azure from "../../assets/Azure.svg";
+import Azure from "../../assets/Xpirit-DoEpicShit-Vector.svg";
 
 import {
   ChatMessage,
@@ -269,9 +269,9 @@ const Chat = () => {
           {!lastQuestionRef.current ? (
             <Stack className={styles.chatEmptyState}>
               <img src={Azure} className={styles.chatIcon} aria-hidden="true" />
-              <h1 className={styles.chatEmptyStateTitle}>Start chatting</h1>
+              <h1 className={styles.chatEmptyStateTitle}>What can I do for you?</h1>
               <h2 className={styles.chatEmptyStateSubtitle}>
-                This chatbot is configured to answer your questions
+                This chatbot helps with employee relevant questions and tasks.
               </h2>
             </Stack>
           ) : (

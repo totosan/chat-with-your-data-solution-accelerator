@@ -79,7 +79,7 @@ AZURE_OPENAI_API_VERSION = os.environ.get(
 )
 AZURE_OPENAI_STREAM = os.environ.get("AZURE_OPENAI_STREAM", "true")
 AZURE_OPENAI_MODEL_NAME = os.environ.get(
-    "AZURE_OPENAI_MODEL_NAME", "gpt-35-turbo"
+    "AZURE_OPENAI_MODEL_NAME", "gpt-4"
 )  # Name of the model, e.g. 'gpt-35-turbo' or 'gpt-4'
 AZURE_TOKEN_PROVIDER = get_bearer_token_provider(
     DefaultAzureCredential(), "https://cognitiveservices.azure.com/.default"

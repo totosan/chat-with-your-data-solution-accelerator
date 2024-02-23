@@ -10,6 +10,9 @@ param resourceToken string = toLower(uniqueString(subscription().id, environment
 @description('Location for all resources.')
 param location string
 
+@description('Location for Azure Search.')
+param locationSearch string
+
 @description('Name of App Service plan')
 param hostingPlanName string = '${environmentName}-hosting-plan-${resourceToken}'
 
@@ -70,10 +73,10 @@ param azureOpenAIResourceName string = '${environmentName}-openai-${resourceToke
 param azureOpenAISkuName string = 'S0'
 
 @description('Azure OpenAI Model Deployment Name')
-param azureOpenAIModel string = 'gpt-35-turbo'
+param azureOpenAIModel string = 'gpt4'
 
 @description('Azure OpenAI Model Name')
-param azureOpenAIModelName string = 'gpt-35-turbo'
+param azureOpenAIModelName string = 'gpt-4'
 
 param azureOpenAIModelVersion string = '0613'
 
@@ -281,7 +284,7 @@ module search './core/search/search-services.bicep' = {
   scope: rg
   params: {
     name: azureAISearchName
-    location: location
+    location: locationSearch
     tags: {
       deployment: searchTag
     }

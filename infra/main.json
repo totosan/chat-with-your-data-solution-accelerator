@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.25.53.49325",
-      "templateHash": "1132638810908211135"
+      "templateHash": "11358076703884063498"
     }
   },
   "parameters": {
@@ -25,6 +25,12 @@
       "type": "string",
       "metadata": {
         "description": "Location for all resources."
+      }
+    },
+    "locationSearch": {
+      "type": "string",
+      "metadata": {
+        "description": "Location for Azure Search."
       }
     },
     "hostingPlanName": {
@@ -148,14 +154,14 @@
     },
     "azureOpenAIModel": {
       "type": "string",
-      "defaultValue": "gpt-35-turbo",
+      "defaultValue": "gpt4",
       "metadata": {
         "description": "Azure OpenAI Model Deployment Name"
       }
     },
     "azureOpenAIModelName": {
       "type": "string",
-      "defaultValue": "gpt-35-turbo",
+      "defaultValue": "gpt-4",
       "metadata": {
         "description": "Azure OpenAI Model Name"
       }
@@ -1177,7 +1183,7 @@
             "value": "[parameters('azureAISearchName')]"
           },
           "location": {
-            "value": "[parameters('location')]"
+            "value": "[parameters('locationSearch')]"
           },
           "tags": {
             "value": {
