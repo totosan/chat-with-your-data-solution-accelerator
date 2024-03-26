@@ -29,7 +29,7 @@ class QuestionAnswerTool(AnsweringToolBase):
 
         # Retrieve documents as sources
         sources = self.vector_store.similarity_search(
-            query=question, k=4, search_type="hybrid"
+            query=question, k=4, search_type="semantic"
         )
 
         # Generate answer from sources

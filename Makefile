@@ -3,7 +3,7 @@ SHELL := /bin/bash
 .PHONY: help
 .DEFAULT_GOAL := help
 
-ENV_FILE := .env
+ENV_FILE := .eazd nv
 ifeq ($(filter $(MAKECMDGOALS),config clean),)
 	ifneq ($(strip $(wildcard $(ENV_FILE))),)
 		ifneq ($(MAKECMDGOALS),config)
